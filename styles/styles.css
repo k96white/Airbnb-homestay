@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+     /* taken from ui gradients website */
+     background: #659999;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to top, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to top, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+    width:100%;
+    height:100%;
+    margin:0px auto;   /*to cover entire page */
+    display: grid;
+    grid-template-rows: 60px 45px 650px repeat(4,190px) 450px;
+    grid-template-columns: 350px 1fr 350px;
+    
+
+  
+    
+    
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* css for header section */
+.header{
+    background-color:lightskyblue; 
+    grid-column:1/-1;
+}
+
+@media screen and (max-width:300px){
+    .header{ 
+         width:100%;
+    }
+}    
+
+
+ul#menulist{
+    list-style: none;
+    top:20px;
+    right: 350px;
+    position: absolute;
+     
+}
+@media screen and (max-width:300px){
+    ul#menulist{ 
+         margin: auto;
+         width: 100%;
+    }
+}    
+li#mlist{
+   padding: 10px;
+   display: inline-block;   
+}
+li#mlist:hover{
+    background-color: black;
+    
+}
+.homestay{
+    margin-left:350px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 70px;
+    background-color: magenta;
+    display: inline-block;
+}
+
+
+
+.box1{
+  /*  background-color: #91EAE4;  */
+    grid-row: 2/9;
+}
+@media screen and (max-width:250px){
+    .box1{ 
+         display: none;
+    }
+}    
+.box2{
+    /*background-color: #91EAE4;*/
+    text-align: center;
+    padding:10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media screen and (max-width:300px){
+    .box2{
+       width:100%;
+       transform: scale(1.1);
+    }
+}
+/* start css for box3 */
+.box3{
+   /* background-color:#91EAE4;*/
+    grid-row: 3/4;
+    width: 100%;
+  /*  border: 2px solid black;*/
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+@media screen and (max-width:300px){
+    .box3{
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+.subbox1{
+    height: 50%;
+    margin-bottom: 5px;
+    flex: 4;
+}
+img#img1{
+    width:100%;
+    height:100%;
+}
+.subbox2-5{
+    height:30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.subbox2{
+    flex: 1;
+    margin-right:  5px;
+}
+img#img2{
+    width:100%;
+    height:100%;
+}
+
+.subbox3{
+   /* border:1px solid black; */
+    flex: 1;
+    margin-right:  5px;
+}
+img#img3{
+    width:100%;
+    height:100%;
+}
+.subbox4{
+  /*  border:1px solid black; */
+    flex: 1;
+    margin-right:  5px;
+}
+img#img4{
+    width:100%;
+    height:100%;
+}
+.subbox5{
+   /* border:1px solid black;*/
+    flex: 1;
+}
+img#img5{
+    width:100%;
+    height:100%;
+}
+
+/* <start> css for space box */
+.box4{
+    margin-top: 5px;
+    grid-row: 4/5;
+    border-bottom: 2px solid white;
+}
+table.spacelist{
+    /*border:2px solid red;*/
+    width: 800px;
+    height:120px;
+}
+@media screen and (max-width:300px){
+    table.spacelist{
+        width:100%;
+    }
+}
+td{
+   /* border:1px solid black; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* <start> css for amenities box */
+.box5{
+   margin-top: 5px;
+   border-bottom: 2px solid white;
+   grid-row:5/6;
+}
+table.amenitiesList{
+    /*border:2px solid red;*/
+    
+    width: 800px;
+    height:120px;
+}
+/* stsrt css for extra info */
+.box6{
+    margin-top: 5px;
+    border-bottom: 2px solid white;
+    grid-row: 6/7;
+}
+.box7{
+    margin-top: 5px;
+   border-bottom: 2px solid white;
+    grid-row:7/8
+}
+.box8{
+    margin-top: 5px;
+    border-bottom: 2px solid white;
+    grid-row: 2/9;
+
+}
+ul.contactlist{
+    list-style: none;
+}
+.footer{
+    margin-top: 5px;
+   
+    color:black;
+    grid-row:8/9;
+}
+button[type=submit]{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button[type=submit]:hover{
+    background-color: coral;
+    color:white;
+}
